@@ -52,20 +52,20 @@ By the final review, this README should clearly show:
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[Enter your group name]`
+`[Bicycle Game]`
 
 ## 1.2 Team Members
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Student 1]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Student 2]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `[Hemadri Mohta]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `[Aryaa Parmar]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
 
 ## 1.3 Project Title
-`[Enter the title of your project]`
+`[Bicycle game]`
 
 ## 1.4 One-Line Pitch
-`[Describe your project in one sentence]`
+`[don't just play the game, Ride it]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,7 +75,7 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+`[We are making use of a physical element, in our case, the cycle that  ]`
 
 ---
 
