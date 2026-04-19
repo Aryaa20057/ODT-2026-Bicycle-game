@@ -52,20 +52,20 @@ By the final review, this README should clearly show:
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[Bicycle Game]`
+`[Bubble]`
 
 ## 1.2 Team Members
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Hemadri Mohta]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Aryaa Parmar]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `[Hemadri Mohta]` | `[ Coding / Fabrication / Circuit Making]` | `[Model Making]` | `[Coding]` |
+| `[Aryaa Parmar]` | `[Model Making / Circuit Making]` | `[Coding]` | `[Product Making]` |
 
 ## 1.3 Project Title
-`[Bicycle game]`
+`[Bubble Maker]`
 
 ## 1.4 One-Line Pitch
-`[don't just play the game, Ride it]`
+`[Pup-up your childhood]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,7 +75,8 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[We are making use of a physical element, in our case, the cycle that  ]`
+`[Our project is an interactive bubble-making machine. This project uses servo motor which controls the ring to move in an out of the soup solution, while DC motor works as a fan to generate airflow for forming bubbles. The system is programmed so that the fan speed of the DC motor responds to the angle of the servo motor, slow when the ring is dipped in the solution and rising and fast when it reaches the optimal position for bubble formation. The users interact with this through the buttons that allow them to manually control the movement for the ring.
+The playful experience comes from the balance between control and surprise. While the user actively decides when and how the ring moves, the actual formation of bubbles feels slightly unpredictable and satisfying—sometimes producing perfect bubbles, sometimes none at all. This creates a sense of curiosity and experimentation, encouraging users to explore timing, positioning, and rhythm. It is engaging because it transforms a simple childhood activity into a responsive, interactive system, using technologies like MicroPython on ESP32, PWM motor control, serco motor operation, and user input through buttons.]`
 
 ---
 
