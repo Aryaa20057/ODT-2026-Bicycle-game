@@ -299,10 +299,10 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[Write here]` |
-| Estimated weight | `[Write here]` |
+| Length | `38cm` |
+| Width | `30cm` |
+| Height | `15cm` |
+| Estimated weight | `500g-1kg` |
 
 ---
 
@@ -322,13 +322,19 @@ Check all that apply.
 - [ ] Wheels
 - [ ] Sliders
 - [ ] Levers
-- [ ] Not applicable
+- [yes] Not applicable
 
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`The mechanism is an electromechanical bubble-generation system designed to produce soap bubbles in a controlled and repeatable manner. It consists of a ring attached to a servo motor and a fan driven by a DC motor. The servo motor provides precise angular motion, allowing the ring to move vertically between two positions: dipping into a soap solution and rising into the airflow path.
+
+When the servo rotates downward, the ring is submerged in the solution, forming a thin liquid film across its surface. As the servo lifts the ring upward, it aligns the film in front of the DC motor (fan). The DC motor, controlled through pulse-width modulation (PWM), generates airflow that deforms the liquid film and inflates it into a bubble.
+
+The system is designed such that the speed of the DC motor is dynamically linked to the servo’s angle. At lower angles (when the ring is submerged or just emerging), the fan remains off or operates at low speed to prevent premature disruption of the film. As the ring reaches higher angles, the fan speed increases, providing sufficient airflow to form bubbles effectively.
+
+Additionally, the mechanism includes user input through push buttons, allowing manual control of the servo’s position. This enables interactive operation, where the user can control the dipping and lifting process while the system automatically adjusts airflow for optimal bubble formation.`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -339,7 +345,13 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`In this system, two main things move: the ring attached to the servo motor and the fan blades of the DC motor. The ring moves up and down in an arc, first dipping into the soap solution and then rising up in front of the fan, while the fan spins to blow air and create bubbles.
+
+The movement of the ring is controlled by the servo motor, which responds to the user pressing the “up” and “down” buttons. Each press slightly changes the angle of the servo, either lifting the ring out of the solution or lowering it back in. At the same time, the fan is powered by a DC motor, and its speed automatically changes depending on how high the ring is.
+
+The ring moves within a set range from fully dipped in the solution to fully raised above it. Instead of jumping instantly, it moves in small steps, making the motion smooth and controlled. The servo moves relatively slowly, while the fan speed changes more noticeably from off, to medium, to fast as the ring rises.
+
+A few things can go wrong in this process. If the ring doesn’t dip properly, the soap film may not form. If the fan blows too hard or too early, the film can break before a bubble is made. Misalignment between the ring and the fan can also affect bubble formation. On the technical side, issues like unresponsive buttons, uneven motor speeds, or loose connections could impact how well the system works.`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
@@ -348,12 +360,13 @@ If your project includes mechanical motion, document the digital planning before
 |---|---|---|
 | `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `[What did you validate?]` |
 | `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
+`not applicable`
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`Not applicable`
 
 ---
 
@@ -363,15 +376,30 @@ What changed after the CAD, animation, or simulation stage?
 
 | Component | Quantity | Purpose |
 |---|---:|---|
-| `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `Component	Quantity	Purpose
+|`ESP32` | `1` | `Acts as the main controller, reading button inputs and controlling both the servo motor and DC motor.` |
+| `Servo Motor` | `1` | `Moves the ring up and down to dip into the soap solution and position it for bubble formation.` |
+| `DC Motor` | `1` | `Spins to create airflow that forms bubbles from the soap film.` |
+|`L298N Motor Driver` | `1` | `Controls the speed of the DC motor using PWM signals from the ESP32.` |
+| `LM2596 Buck Converter` | `1` | `Steps down and regulates the voltage to safely power components like the ESP32 and motors.` |
+| `Push Buttons` | `2` | `Allow the user to control the upward and downward movement of the servo motor.` |
+| `Jumper Wires` | `14` | `Used to connect all electronic components in the circuit.` |
+| `Power Adapter` | `1` | `Supplies power to the entire system.` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`**Response:**
+The wiring is organized around the ESP32, which acts as the central controller and is placed on the breadboard. Power from the adapter is first passed through the LM2596 buck converter to step down the voltage to a safe level. This regulated power is then distributed to the ESP32, the servo motor, and the L298N motor driver. All components share a common ground connection to ensure stable operation.
+
+The servo motor is connected to the ESP32 with three wires: power (VCC), ground (GND), and a signal wire connected to GPIO 21. This allows the ESP32 to control the angular position of the servo.
+
+The DC motor is connected to the output terminals of the L298N motor driver. The driver itself is connected to the ESP32 using three pins: IN1 (GPIO 27) and IN2 (GPIO 26) to control direction, and ENA (GPIO 14) for speed control using PWM.
+
+Two push buttons are connected to GPIO 18 and GPIO 19. One side of each button is connected to ground, and the other side goes to the respective GPIO pin, using the ESP32’s internal pull-up resistors to detect button presses.
+
+The breadboard is used to organize these connections neatly, with jumper wires linking all components. Overall, the wiring ensures that power is properly regulated and that signals between the ESP32, motors, and user inputs are correctly established for smooth operation of the system.`
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
