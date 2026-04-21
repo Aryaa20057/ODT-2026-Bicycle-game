@@ -1,0 +1,11 @@
+from machine import Pin
+import time
+
+# Motor pins
+IN1 = Pin(26,Pin.OUT)
+IN2 = Pin(27, Pin.OUT)
+
+while True:  
+    IN1.on()
+    IN2.off()
+    time.sleep(5)
