@@ -65,7 +65,7 @@ By the final review, this README should clearly show:
 `[Bubble Maker]`
 
 ## 1.4 One-Line Pitch
-`[Pup-up your childhood]`
+`[Pop-up your childhood]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -418,8 +418,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform | Purpose |
 |---|---|
-| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
-| `[Tool]` | `[Purpose]` |
+| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `NA` |
+| `[Tool]` | `NA` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
@@ -598,8 +598,8 @@ Push buttons provide a simple and reliable user interface for manual control of 
 6. Jumper Wires
 Jumper wires were chosen for circuit connections because they allow quick prototyping, easy modifications, and secure connections without soldering, which is ideal for iterative design processes.
 
-7. Bangle (Ring Structure)
-A bangle is used as the bubble ring because of its smooth circular shape, lightweight nature, and ready availability. Compared to custom-fabricated rings, it is cost-effective and already optimized for forming consistent soap films.
+7. 3D printed ring (Ring Structure)
+A 3D printed ring is used as the bubble ring because of its smooth circular shape, lightweight nature, and ready availability. Compared to custom-fabricated rings, it is cost-effective and already optimized for forming consistent soap films.
 
 8. Container (Soap Solution Holder)
 A container is used to hold the soap solution due to its stability and ability to maintain sufficient depth for proper dipping. It ensures consistent coating of the ring for bubble formation.
@@ -667,13 +667,13 @@ Documentation will be maintained continuously throughout the project. One or mor
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `Aryaa and Hemadri` | `2` | `[Date]` | `None` | `Done` |
-| T2 | `[Complete BOM]` | `Aryaa and Hemadri` | `1` | `[Date]` | `T1` | `Done` |
-| T3 | `[Test electronics]` | `Hemadri` | `2` | `[Date]` | `T1` | `Done` |
-| T4 | `[Build structure]` | `Aryaa and Hemadri` | `4` | `[Date]` | `T1` | `Done` |
-| T5 | `[Write control code]` | `Aryaa` | `4` | `[Date]` | `T3` | `Done` |
-| T6 | `[Integrate system]` | `Aryaa and Hemadri` | `4` | `[Date]` | `T4, T5` | `Done` |
-| T7 | `[Playtest]` | `Aryaa and Hemadri` | `2` | `[Date]` | `T6` | `Done` |
+| T1 | `[Finalize concept]` | `Aryaa and Hemadri` | `2` | `1/4/26` | `None` | `Done` |
+| T2 | `[Complete BOM]` | `Aryaa and Hemadri` | `1` | `20/4/26` | `T1` | `Done` |
+| T3 | `[Test electronics]` | `Hemadri` | `2` | `17/4/26` | `T1` | `Done` |
+| T4 | `[Build structure]` | `Aryaa and Hemadri` | `4` | `16/4/26` | `T1` | `Done` |
+| T5 | `[Write control code]` | `Aryaa` | `4` | `15/4/26` | `T3` | `Done` |
+| T6 | `[Integrate system]` | `Aryaa and Hemadri` | `4` | `17/4/26` | `T4, T5` | `Done` |
+| T7 | `[Playtest]` | `Aryaa and Hemadri` | `2` | `18/4/26` | `T6` | `Done` |
 | T8 | `[Refine and document]` | `Aryaa and Hemadri` | `3` | `[Date]` | `T7` | `Done` |
 
 ## 13.3 Responsibility Split
