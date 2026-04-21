@@ -1,4 +1,4 @@
-# Open Design and Technology  
+final # Open Design and Technology  
 ## Final Project README
 
 > **Project Weight:** 70%  
@@ -924,18 +924,6 @@ What did you learn about:
 - integration?
 
 **Response:**  
-`[Write here]`
-
-## 19.3 Design Reflection
-What did you learn about:
-- designing for play,
-- delight,
-- clarity,
-- physical interaction,
-- player understanding,
-- iteration?
-
-**Response:**  
 `This project helped us understand how different parts come together to make a working system.
 
 In electronics, we learned how to connect and control components like the servo motor, DC motor, buttons, and the L298N driver. We got a clearer idea of how PWM works for speed control and how inputs from buttons can trigger physical actions.
@@ -947,6 +935,18 @@ In terms of mechanisms, we explored how motion works how the servo’s rotation 
 During fabrication, we worked with foam board and a 3D-printed part, which taught us about building stable structures, aligning components properly, and making small adjustments when things didn’t fit perfectly.
 
 Finally, in integration, we realized that everything has to work together smoothly. Even if one part is slightly off whether in code, wiring, or structure  it affects the whole system. A lot of our learning came from testing, fixing, and improving the setup step by step.`
+
+## 19.3 Design Reflection
+What did you learn about:
+- designing for play,
+- delight,
+- clarity,
+- physical interaction,
+- player understanding,
+- iteration?
+
+**Response:**  
+``
 
 ## 19.4 If You Had One More Week
 What would you improve next?
